@@ -1,7 +1,6 @@
 var { MongoClient } = require('mongodb');
 
-var uri =
-    'mongodb+srv://noritang9:shflxodrn@cluster0-be2vw.mongodb.net/test?retryWrites=true&w=majority';
+var uri = `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASS}@cluster0-be2vw.mongodb.net/test?retryWrites=true&w=majority`;
 
 var options = {
     useNewUrlParser: true,
